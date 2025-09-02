@@ -1,0 +1,39 @@
+\documentclass[UTF8]{article}
+\usepackage{ctex}
+\usepackage{listings}
+\usepackage{xcolor}
+\title{Latex的listings宏包练习}
+
+\lstset{
+    basicstyle=\ttfamily\small, % 基本字体：等宽、小号
+    numbers=left,               % 在左侧显示行号
+    numberstyle=\color{gray},   % 行号样式：灰色
+    stepnumber=1,               % 每行都显示行号
+    numbersep=5pt,              % 行号与代码的间隔
+    backgroundcolor=\color{white}, % 背景色
+    showspaces=false,           % 不显示空格符号
+    showstringspaces=false,     % 字符串中的空格不显示特殊符号
+    showtabs=false,             % 不显示制表符
+    frame=single,               % 代码框样式：单线边框
+    rulecolor=\color{black},    % 边框颜色
+    tabsize=2,                  % 制表符等于2个空格
+    captionpos=b,               % 标题位置：底部 (b) 或顶部 (t)
+    breaklines=true,            % 自动换行
+    breakatwhitespace=true,     % 只在空格处换行
+    keywordstyle=\color{blue},  % 关键字颜色
+    commentstyle=\color{green!50!black}, % 注释颜色
+    stringstyle=\color{red}     % 字符串颜色
+}
+\begin{document}
+
+\maketitle
+
+
+
+\begin{lstlisting}[language=Python, caption=一个Python示例] 
+squares = [x**2 for x in range(10)]
+if squares[5] == 25:
+    print("Hello from Python!")
+\end{lstlisting}
+
+\end{document}

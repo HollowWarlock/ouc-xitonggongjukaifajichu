@@ -1,0 +1,28 @@
+\documentclass[UTF8]{article}
+\usepackage{ctex}
+\usepackage{graphicx}
+\title{Latex的引用练习}
+
+\begin{document}
+\section{章节1}
+\label{sec:intro}
+
+在章节 \ref{1} 中，如位于第 \pageref{2} 页的\ref{2} 所示。
+
+\section{章节2}
+\label{1} % 为“方法”章节定义标签
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{kon.png}
+    \caption{示例图}
+    \label{2} % 为图定义标签，必须在 \caption 之后！
+\end{figure}
+
+如公式 \ref{3} 所示，著名的质能方程是：
+\begin{equation}
+E = mc^2
+\label{3} 
+\end{equation}
+
+\end{document}
